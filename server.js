@@ -13,6 +13,5 @@ app.listen(3000);
 
 // GET Requests 
 app.get("/", (res, req) => {
-    console.log(__dirname);
-    //req.sendFile(__filename + "/index.html");
+    req.sendFile(__dirname + "/index.html");
 });
